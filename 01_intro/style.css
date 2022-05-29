@@ -1,0 +1,72 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+#menu {
+  background-color: brown;
+  height: 20vh;
+  line-height: 15vh;
+}
+#menu ul {
+  width: 100%;
+  list-style-type: none;
+}
+#menu li {
+  display: inline-block;
+  padding: 10px;
+}
+#menu a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  display: block;
+  text-align: center;
+}
+#menu a:hover {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+section {
+  height: 60vh;
+}
+section article .article-header {
+  font-size: 2rem;
+  text-align: center;
+}
+section article .article-content {
+  background-color: aqua;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+section article .article-content::selection {
+  color: yellow;
+}
+section article .article-content:hover {
+  transform: scale(0.5, 0.5);
+}
+section article .article-content::after {
+  content: "🌄";
+}
+section article .article-content::first-letter {
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+footer {
+  height: 20vh;
+  background-color: gray;
+}
+footer .article-footer {
+  font-family: cursive;
+  height: 10vh;
+}
+
+/*# sourceMappingURL=style.css.map */

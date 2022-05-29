@@ -1,0 +1,85 @@
+@import './reset';
+//VARİABLES
+
+$fontSize:1rem;
+$bgColor:brown;
+$fontFamily:Arial;
+$color:white;
+
+body{
+    height: 100vh;
+}
+
+#menu{
+    background-color: $bgColor;
+    height: 20vh;
+    line-height: 15vh;
+    ul{
+        width: 100%;
+        list-style-type: none;
+        
+    }
+    li{
+        display: inline-block;
+        padding: 10px;
+    }
+    a{
+        color:$color;
+        text-decoration: none;
+        padding: 8px 16px;
+        display: block;
+        text-align: center;
+
+        &:hover{
+            text-decoration: underline;
+            text-decoration-style: dotted;
+        }
+    }
+}//Comment için kullanılır
+
+section{
+    height: 60vh;
+    article{
+    .article-header{
+        font-size:2rem;
+        text-align: center;
+        
+    }
+    .article-content{
+        background-color: aqua;
+        line-height: 2rem;
+        margin-bottom: 1rem;
+        
+        
+
+        &::selection{
+            color:yellow;
+        }
+        &:hover{
+            transform: scale(.5,.5);
+        }
+        &::after{
+            content:'🌄'
+        }
+        &::first-letter{
+            font-weight: bolder;
+            font-size: 2rem;
+        }
+      
+
+
+    }
+    
+}
+}
+
+footer{
+    height: 20vh;
+    background-color: gray;
+.article-footer{
+    font-family: cursive;
+    height: 10vh;
+}
+}
+
+
